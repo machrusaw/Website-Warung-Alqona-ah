@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Al-Qona'ah</title>
+    <link rel="icon" href="foto/logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- Header-->
+    <section class="header">
+        <img src="foto/logo.png" alt="">
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#menu">Menu</a>
+            <a href="#artikel">Artikel</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+<!-- Akhir Header -->
+
+<!-- Home -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background: url(foto/depan.jpg) no-repeat;">
+                    <div class="content">
+                        <span>Tampilan Warung</span>
+                        <h3>Al-Qona'ah</h3>
+                        <a href="tampilan.html" class="btn">Telusuri</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(foto/warung2.png) no-repeat;">
+                    <div class="content">
+                        <span>Tampilan Warung</span>
+                        <h3>Al-Qona'ah</h3>
+                        <a href="tampilan.html" class="btn">Telusuri</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(foto/kopitan.png) no-repeat;">
+                    <div class="content">
+                        <span>Tampilan Menu</span>
+                        <h3>Kopi Ketan</h3>
+                        <a href="tampilan.html" class="btn">Telusuri</a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+        </div>
+    </section>
+<!-- Akhi Home -->
+
+<!-- TENTANG -->
+<section class="about" id="tentang">
+    <div class="image">
+        <img src="foto/depan.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3 class="title">Selamat datang di website warung kami...</h3>
+        <p>Berdiri sejak tahun 2013. Sudah 9 tahun berdiri, warung Al - Qona'ah tetap mempertahankan ciri khas yaitu menjual kopi ketan. Ciri khas terdapat pada ketan nya yang punel dan sangat sedap. Serta terdapat sambal bubuk kedelai yang membuat cita rasa semakin enak. Serta dilengkapi dengan parutan kelapa.</p>
+        <a href="tentang.html" class="btn">Baca selengkapnya..</a>
+    </div>
+</section>
+<!-- AKHIR TENTANG -->
+
+<!-- MENU POPULAR -->
+<section class="makananpop">
+    <div class=heading>
+        <span>Menu Popular</span>
+        <h3>Di Warung Al-Qona'ah</h3>
+    </div>
+
+    <div class="swiper food-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide" data-name="food-1">
+                <img src="foto/popular-ketan.png" alt="">
+                <h3>Ketan</h3>
+                <div class="price">Rp 5.000,-</div>
+            </div>
+            <div class="swiper-slide slide" data-name="food-2">
+                <img src="foto/popular-kopi.png" alt="">
+                <h3>Kopi Cangkir</h3>
+                <div class="price">Rp 3.000,-</div>
+            </div>
+            <div class="swiper-slide slide" data-name="food-3">
+                <img src="foto/popular-teh.jpg" alt="">
+                <h3>Teh Hangat</h3>
+                <div class="price">Rp 3.000,-</div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+</section>
+<!-- AKHIR MENU POPULAR -->
+
+<!-- MENU MAKANAN DAN MINUMAN -->
+<section class="menu" id="menu">
+    <div class="heading">
+        <span>Daftar</span>
+        <h3>Menu Al - Qona'ah</h3>
+    </div>
+    <div class="menu-container">
+        <a href="foto/daftar menu.png" class="box">
+            <img src="foto/daftar menu.png" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+        </a>
+    </div>
+</section>
+<!-- AKHIR MENU MAKANAN DAN MINUMAN -->
+
+<!-- ARTIKEL -->
+<section class="artikel" id="artikel">
+    <div class="heading">
+        <span>Ini Adalah</span>
+        <h3>Artikel</h3>
+    </div>
+    <div class="isi">
+        <table cellspacing=10rem>
+            <tr>
+                <td><table style="width: 14.7%;height: 20%; background-color:white; padding: 2rem; border-radius: 1rem;">
+                    <tr colspan="2">
+                        <td colspan="2"><img src="foto/ketan-bubuk.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="judul" colspan="2">Makanan Tradisional Ketan yang Sangat Lezat</td>
+                    </tr>
+                    <tr>
+                        <td class="icon"> <i class="fas fa-calendar"></i><b>Sabtu,04 Juni 2022</b></td>
+                        <td style="float: right;" class="icon"> <i class="fas fa-user"></i><b>by Machrusaw</b></td>
+                    </tr>
+                    <tr>
+                        <td class="text" colspan="2" style="text-align: justify;">
+                            <p>Makanan berbahan ketan baik dalam bentuk apapun merupakan salah satu jajanan tradisional paling favorit. Baik dalam bentuk lemper, lupis ataupun yang lebih sederhana seperti ketan bubuk, makanan berbahan dasar ketan merupakan salah satu khasanah kuliner tradisional yang banyak dicari...</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="Makanan Tradisional Ketan Yang Sangat Lezat.html" class="btn">Baca selengkapnya..</a>
+                        </td>
+                    </tr>
+                </table></td>
+                <td><table style="width: 14.7%; height: 20%; background-color:white; padding: 2rem; border-radius: 1rem;">
+                    <tr colspan="2">
+                        <td colspan="2"><img src="foto/artikel-kopi.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="judul" colspan="2">Kopi cangkir lebih enak dari kopi gelas biasa</td>
+                    </tr>
+                    <tr>
+                        <td class="icon"> <i class="fas fa-calendar"></i><b>Minggu,05 Juni 2022</b></td>
+                        <td style="float: right;" class="icon"> <i class="fas fa-user"></i><b>by Machrusaw</b></td>
+                    </tr>
+                    <tr>
+                        <td class="text" colspan="2" style="text-align: justify;">
+                            <p>Menyesap kopi yang baru saja diseduh memanglah nikmat. Masih hangat dan aromanya menguar segar. Bukan hanya jenis biji kopinya saja yang dapat mempengaruhi rasa, tetapi cangkir yang digunakan untuk wadah kopi juga bisa. Cangkir mulus bisa bikin rasa kopi lebih enak...</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="Kopi cangkir lebih enak dari kopi gelas biasa.html" class="btn">Baca selengkapnya..</a>
+                        </td>
+                    </tr>
+                </table></td>
+            </tr>
+            <tr>
+                <td><table style="width: 14.7%; height: 20%; background-color:white; padding: 2rem; border-radius: 1rem; margin-top: 1rem;">
+                    <tr colspan="2">
+                        <td colspan="2"><img src="foto/artikel-menu minum.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="judul" colspan="2">Minuman apa saja yang di jual di Al-Qona'ah?</td>
+                    </tr>
+                    <tr>
+                        <td class="icon"> <i class="fas fa-calendar"></i><b>Rabu,08 Juni 2022</b></td>
+                        <td style="float: right;" class="icon"> <i class="fas fa-user"></i><b>by Machrusaw</b></td>
+                    </tr>
+                    <tr>
+                        <td class="text" colspan="2" style="text-align: justify;">
+                            <p>Jika kalian tidak suka minum kopi tenang saja. Di warung Al-Qona'ah tidak hanya menjual kopi saja kok, selain kopi disini juga menyediakan minuman teh hangat dan juga es teh. Selain itu di warung Al-Qona'ah juga menyediakan minuman sachetan...</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="Minuman apa saja yang di jual di Al-Qona'ah.html" class="btn">Baca selengkapnya..</a>
+                        </td>
+                    </tr>
+                </table></td>
+                <td><table style="width: 14.7%; height: 20%; background-color:white; padding: 2rem; border-radius: 1rem; margin-top: 2rem;">
+                    <tr colspan="2">
+                        <td colspan="2"><img src="foto/pinggir.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="judul" colspan="2">Aneka camilan siap anda nikmati</td>
+                    </tr>
+                    <tr>
+                        <td class="icon"> <i class="fas fa-calendar"></i><b>Jumat,10 Juni 2022</b></td>
+                        <td style="float: right;" class="icon"> <i class="fas fa-user"></i><b>by Machrusaw</b></td>
+                    </tr>
+                    <tr>
+                        <td class="text" colspan="2" style="text-align: justify;">
+                            <p>Terasa kurang pastinya jika kita hanya memesan minuman tanpa ada makanan. Akan tetapi jika kalian tidak terlalu lapar, kalian bisa memakan camilan sebagai teman untuk minuman sambil ngobrol asik bersama teman nongkrong...</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="Aneka camilan siap anda nikmati.html" class="btn">Baca selengkapnya..</a>
+                        </td>
+                    </tr>
+                </table></td>
+            </tr>
+        </table>
+        
+    </div>
+
+</section>
+<!-- AKHIR ARTIKEL -->
+
+<!-- LOKASI -->
+<section class="lokasi" id="lokasi">
+    <div class="heading">
+        <span>Lokasi</span>
+        <h3>Warung Al-Qona'ah</h3>
+    </div>
+    <div class="peta">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.2275970099336!2d112.1774883145939!3d-7.099598994872911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e778c51f7061aed%3A0x4cc63665a6ecca38!2sWarung%20Al-Qona&#39;ah!5e0!3m2!1sid!2sid!4v1654354409357!5m2!1sid!2sid" width="60%" height="450rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+<!-- AKHIR LOKASI -->
+
+<!-- FOOTER -->
+<section class="footer">
+
+    <div class="icons-container">
+ 
+       <div class="icons">
+          <i class="fas fa-clock"></i>
+          <h3>Jam Buka</h3>
+          <p>Senin - Jum'at = 16.30 - 03.00 WIB</p>
+       </div>
+ 
+       <div class="icons" id="kontak">
+          <i class="fas fa-phone"></i>
+          <h3>No Telpon</h3>
+          <p>+62895-6211-32215</p>
+       </div>
+ 
+       <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <p>alqonaah1@gmail.com</p>
+          <p>machrusa86@gmail.com</p>
+       </div>
+ 
+       <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>Alamat</h3>
+          <p>Babat, Lamongan - 62271</p>
+       </div>
+ 
+    </div>
+ 
+    <div class="share">
+       <a href="https://facebook.com/Machrusaw" class="fab fa-facebook-f"></a>
+       <a href="https://twitter.com/Machrus37340442" class="fab fa-twitter"></a>
+       <a href="https://instagram.com/machrusaw_" class="fab fa-instagram"></a>
+       <a href="https://linkedin.com/in/machrus-ali-3926b11b8" class="fab fa-linkedin"></a>
+    </div>
+ 
+    <div class="credit"> di buat oleh <span>Machrusaw</span> | &copy;Al-Qona'ah 2022 </div>
+ 
+ </section>
+ 
+<!-- AKHIR FOOTER -->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+   lightGallery(document.querySelector('.menu .menu-container'));
+</script>
+   
+</body>
+</html>

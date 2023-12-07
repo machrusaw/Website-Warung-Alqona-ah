@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+
+:root{
+   --blue:#3f37c9;
+   --black:#222;
+   --white:#fff;
+   --light-black:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --dark-bg:rgba(0,0,0,.7);
+   --border:.1rem solid #aaa;
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Dosis', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; 
+   text-decoration: none;
+   transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+}
+
+* > img{
+   user-select: none;
+   pointer-events: none;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar{
+   width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+   background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+   background-color: var(--blue);
+}
+
+section{
+   padding:5rem 10%;
+}
+
+/* CSS UNTUK JUDUL PADA HOME */
+.heading{
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.heading span{
+   font-size: 2.5rem;
+   color:var(--blue);
+}
+
+.heading h3{
+   font-size: 4.5rem;
+   color:var(--black);
+}
+/* AKHIR CSS HEADING */
+
+/* ARTIKEL */
+.judulart {
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.judulart h3{
+   font-size: 5rem;
+   color:var(--blue);
+}
+
+.judulart h4{
+   font-size: 6rem;
+   color: var(--black);
+}
+
+.isiart{
+   margin-left: 13%;
+   width:75%;
+}
+
+.gambarart {
+   margin-left: 10%;
+   width:75%;
+}
+
+.isitentang .gambarart img{
+   width: 80%;
+   position: relative;left:15%;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.isitentang .gambarart b{
+   position: relative;right: 63%;
+   font-size: 1rem;
+}
+
+.isitentang .gambarart span{
+   position: relative;right: 4%;
+   font-size: 1.2rem;
+}
+
+.isitentang .isiart p{
+   margin-top: 2rem;
+   text-align: justify;
+   font-size: 2rem;
+}
+/* AKHIR ARTIKEL */
+
+/* CSS UNTUK TOMBOL */
+.btn{
+   margin-top: 1rem;
+   display: inline-block;
+   background: var(--blue);
+   color:var(--white);
+   font-size: 2rem;
+   cursor: pointer;
+   padding:1rem 3rem;
+   border-radius: 1rem;
+}
+
+.btn:hover{
+   letter-spacing: .2rem;
+}
+/* AKHIR CSS TOMBOL */
+
+/* CSS UNTUK HEADER */
+.header{
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   box-shadow: var(--box-shadow);
+   position: sticky;
+   top:0; left:0; right: 0;
+   background: var(--white);
+   z-index: 1000;
+}
+
+.header img{
+   width: 8rem;
+   border-radius: 1rem;
+}
+
+.header .navbar a{
+   font-size: 2rem;
+   margin-left: 2rem;
+   color:var(--light-black);
+}
+
+.header .navbar a:hover{
+   color:var(--blue);
+}
+/* AKHIR CSS HEADER */
+
+/* CSS UNTUK TOMBOL MENU HEADER */
+#menu-btn{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color:var(--black);
+   display: none;
+}
+/* AKHIR CSS TOMBOL MENU HEADER */
+
+@keyframes fadeIn {
+   0%{
+      transform: translateY(-4rem) scale(0);
+      opacity: 0;
+   }
+}
+
+/* CSS UNTUK HOME */
+.home{
+   padding:0;
+   background: var(--black);
+}
+
+.home .slide{
+   min-height: 100vh;
+   background-size: cover !important;
+   background-position: center !important;
+   position: relative;
+   z-index: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.home .slide::before{
+   content: '';
+   position: absolute;
+   top:0; left:0;
+   height: 100%;
+   width: 100%;
+   background: var(--dark-bg);
+   z-index: -1;
+}
+
+.home .slide .content{
+   text-align: center;
+   width: 70rem;
+   display: none;
+}
+
+.home .slide .content span{
+   font-size: 3rem;
+   display: block;
+   padding-bottom: .5rem;
+   color:var(--light-white);
+   animation:fadeIn 0.4s cubic-bezier(.54,1.3,.63,1.34) .2s backwards;
+}
+
+.home .slide .content h3{
+   font-size: 8vw;
+   text-transform: uppercase;
+   color:var(--white);
+   text-shadow: 0 .5rem 1rem rgba(0,0,0,.7);
+   line-height: 1;
+   padding:2rem 0;
+   animation:fadeIn 0.4s cubic-bezier(.54,1.3,.63,1.34) .4s backwards;
+}
+
+.home .slide .content .btn{
+   animation:fadeIn 0.4s cubic-bezier(.54,1.3,.63,1.34) .6s backwards;
+}
+
+.home .swiper-slide-active .content{
+   display: inline-block;
+}
+/* AKHIR CSS HOME */
+/* CSS TOMBOL NEXT PREV PADA HOME */
+.swiper-button-next,
+.swiper-button-prev{
+   height: 5rem;
+   width: 5rem;
+   line-height: 5rem;
+   background: var(--white);
+   color:var(--black);
+   border-radius: 50%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+   background: var(--blue);
+   color:var(--white);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+   font-size: 2rem;
+}
+/* AKHIR CSS NEXT PREV HOME */
+
+/* CSS UNTUK ABOUT /TENTANG */
+.about{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap:2rem;
+}
+
+.about .image{
+   flex:1 1 41rem;
+}
+
+.about .image img{
+   width: 100%;
+}
+
+.about .content{
+   flex:1 1 41rem;
+}
+
+.about .content .title{
+   font-size: 4rem;
+   color:var(--black);
+}
+
+.about .content p{
+   font-size: 1.7rem;
+   color:var(--light-black);
+   padding:1rem 0;
+   line-height: 2;
+}
+/* AKHIR CSS ABOUT/TENTANG */
+
+/* CSS UNTUK MENU POPULER */
+.makananpop{
+   background: var(--light-bg);
+}
+
+.makananpop .slide{
+   text-align: center;
+   padding:4rem 2rem;
+   border-radius: .5rem;
+   transform: scale(.9);
+   opacity: .5;
+   margin-bottom: 4rem;
+   cursor: pointer;
+}
+
+.swiper-pagination-bullet-active{
+   background: var(--blue);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+   bottom:0;
+}
+
+.makananpop .swiper-slide-active{
+   transform: scale(1);
+   opacity: 1;
+   background: var(--white);
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+}
+
+.makananpop .slide img{
+   height: 25rem;
+   margin-bottom: 1rem;
+}
+
+.makananpop .slide h3{
+   font-size: 2.5rem;
+   padding:1rem 0;
+   color:var(--black);
+}
+
+.makananpop .slide .price{
+   font-size: 2.5rem;
+   color:var(--blue);
+}
+/* AKHIR CSS MAKANAN POPULER */
+
+/* CSS UNTUK MENU */
+.menu .menu-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+}
+
+.menu .menu-container .box{
+   height: 100%;
+   width: 50%;
+   position: relative; left:25%;
+   overflow: hidden;
+}
+
+.menu .menu-container .box img{
+   width: 100%;
+   position: relative;
+   object-fit: cover;
+}
+
+.menu .menu-container .box .icon{
+   display: none;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top:0; left:0;
+   z-index: 10;
+   height: 100%;
+   width: 100%;
+   background: var(--dark-bg);
+}
+
+.menu .menu-container .box .icon i{
+   font-size: 6rem;
+   color:var(--white);
+}
+
+.menu .menu-container .box:hover .icon{
+   display: flex;
+}
+/* AKHIR CSS MENU */
+
+/* CSS UNTUK ARTIKEL HOME */
+.artikel{
+   background: var(--light-bg);
+   
+}
+.artikel .isi{
+   overflow: auto;
+}
+
+.artikel .isi table{
+   position: relative; left: 6%;
+}
+
+.artikel .judul {
+   font-size: 2.5rem;
+   font-weight: bolder;
+   color:var(--black);
+}
+
+.artikel img{
+   width: 30rem;
+   height: 20rem;
+   border-radius: 1rem;
+}
+.artikel .icon i{
+   font-size: 1.5rem;
+   color:#fca311;
+   margin-right: 0.5rem;
+}
+
+.artikel .icon b{
+   font-size: 1.5rem;
+}
+
+.artikel .text{
+   font-size: 1.7rem;
+   color:var(--light-black);
+}
+/* AKHIR CSS ARTIKEL HOME */
+
+/* CSS UNTUK LOKASI */
+.lokasi{
+   overflow: hidden;
+}
+
+.lokasi .peta{
+   position: relative;left: 20%;
+}
+/* AKHIR CSS LOKASI */
+
+/* CSS UNTUK FOOTER */
+.footer{
+   text-align: center;
+   background: var(--light-bg);
+   /* padding-bottom: 10rem; */
+}
+
+.footer .icons-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:2rem;
+}
+
+.footer .icons-container .icons{
+   text-align: center;
+   padding:3rem 2rem;
+}
+
+.footer .icons-container .icons i{
+   height: 6rem;
+   width: 6rem;
+   border-radius: 50%;
+   background: var(--blue);
+   color:var(--white);
+   margin-bottom: .5rem;
+   line-height: 5.8rem;
+   font-size: 2rem;
+}
+
+.footer .icons-container .icons h3{
+   font-size: 2rem;
+   color:var(--black);
+   padding:1rem 0;
+}
+
+.footer .icons-container .icons p{
+   line-height: 1.5;
+   font-size: 1.7rem;
+   color:var(--light-black);
+   text-transform: none;
+}
+
+.footer .share{
+   margin:2rem 0;
+}
+
+.footer .share a{
+   height: 6rem;
+   width: 6rem;
+   line-height: 5.8rem;
+   color:var(--white);
+   background: var(--black);
+   margin:0 .3rem;
+   font-size: 2.5rem;
+   border-radius: 2rem;
+}  
+
+.footer .share a:hover{
+   background: var(--blue);
+}
+
+.footer .credit{
+   padding-top: 2.5rem;
+   margin-top: 3rem;
+   border-top: var(--border);
+   font-size: 2rem;
+   color:var(--light-black);
+}
+
+.footer .credit span{
+   color:var(--blue);
+}
+/* AKHIR CSS FOOTER */
+
+
+@media (max-width:1200px){
+
+   section{
+      padding:3rem 100%;
+   }
+
+}
+
+@media (max-width:991px){
+
+   section{
+      padding:3rem 2rem;
+   }
+
+   html{
+      font-size: 55%;
+   }
+
+   .home .slide .content h3{
+      font-size: 15vw;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+   }
+
+   .fa-times{
+      transform: rotate(180deg);
+   }
+
+   .header .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: var(--white);
+      border-top: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .navbar a{
+      display: block;
+      margin:2rem;
+   }
+
+   .swiper-button-next,
+   .swiper-button-prev{
+      top:initial;
+      bottom:1rem;
+   }
+
+   .menu .slide .box-container .box{
+      flex-flow: column;
+      text-align: center;
+   }
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .home .slide .content h3{
+      font-size: 7rem;
+   }
+
+}
